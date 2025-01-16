@@ -1,4 +1,4 @@
-# Bitmoro PHP SDK
+# Bitmoro PHP SDK for SMS API
 
 ## Installation
 
