@@ -27,7 +27,7 @@ class Bitmoro extends HttpRequest
 
     public function sendOTP(array $numbers, string $message, $newSenderId = null)
     {
-        $url = "http://192.168.1.6:4000/message/api";
+        $url = "https://bitmoro.com/api/message/api";
         $token = $this->getApiToken();
         $senderId = $newSenderId ?? $this->getSenderId();
         // Request payload
@@ -42,7 +42,7 @@ class Bitmoro extends HttpRequest
 
     public function sendBulkSms(array $numbers, string $message, $scheduledDate = null, $callbackUrl = null, $newSenderId = null)
     {
-        $url = "http://192.168.1.6:4000/message/bulk-api";
+        $url = "https://bitmoro.com/api/message/bulk-api";
         $token = $this->getApiToken();
         $senderId = $newSenderId ?? $this->getSenderId();
         // Request payload
@@ -59,7 +59,7 @@ class Bitmoro extends HttpRequest
 
     public function sendDynamicSms(array $contacts, string $message, $scheduledDate = null, $callbackUrl = null, $defaultValues = [], $newSenderId = null)
     {
-        $url = "http://192.168.1.6:4000/message/dynamic-api";
+        $url = "https://bitmoro.com/api/message/dynamic-api";
         $token = $this->getApiToken();
         $senderId = $newSenderId ?? $this->getSenderId();
         // Request payload
