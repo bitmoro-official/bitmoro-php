@@ -1,18 +1,23 @@
 {
-    "name": "bitmoro/bitmorophp",
-    "description": "A SDK Package of Bitmoro for php applications",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Bitmoro\\Bitmorophp\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Bitmoro"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "bitmoro/bitmorophp",
+  "description": "A SDK Package of Bitmoro for php applications",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Bitmoro\\Bitmorophp\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Bitmoro",
+      "email": "contact@bitmoro.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4.0"
+  },
+  "require-dev": {}
 }
