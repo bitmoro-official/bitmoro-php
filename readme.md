@@ -181,5 +181,39 @@ $response = $bitmoro->sendDynamicSms($contacts, $message, $scheduleDate, $callba
     "errorCode": "01"
 }
 ```
+# Future Updates - ReadMe
+
+## Overview
+This document outlines the future updates planned for the project. The updates include features related to **Reporting** and **Callback URL** integration. These enhancements aim to improve functionality, security, and user experience.
+
+## Features
+
+### 1. Reporting
+- **Goal:** Provide comprehensive reporting tools.
+- **Details:**
+  - Develop detailed reporting features for better insights.
+  - Include data visualization options such as charts and graphs.
+  - Add functionality to export reports in various formats (PDF, Excel).
+- **Priority:** High
+
+### 2. Callback URL
+- **Goal:** Enhance system communication via callback URLs.
+- **Details:**
+  - Design and test callback URL integration to ensure seamless data exchange.
+  - Implement secure communication mechanisms, such as OAuth or token-based authentication.
+  - Include logging and error handling to manage callback responses effectively.
+- **Priority:** Medium
+
+## Contribution Guidelines
+- Fork the repository and create a feature branch for any new additions.
+- Submit a pull request with a detailed description of the updates.
+- Ensure all tests pass before submission.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+Feel free to update this file as new features or changes are introduced.
+
 
 
