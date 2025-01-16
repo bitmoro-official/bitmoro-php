@@ -24,3 +24,38 @@ $bitmoro = new Bitmoro($apiToken, $senderId);
 // print_r($response);
 
 // // Send Dynamic SMS
+$contacts = [
+
+    [
+        "number" => "9842882495",
+        "message" => "Hello, this is a test message",
+        "city" => "Kathmandu",
+        "country" => "Nepal",
+        "to" => "9842882495",
+        "bipin" => "asdsadas"
+    ],
+    [
+        "number" => "9869352017",
+        "message" => "Hello, this is a test message",
+        "city" => "Kathmandu",
+        "country" => "Nepal",
+        "to" => "9869352017"
+    ],
+    [
+        "number" => "9810101010",
+        "message" => "Hello, this is a test message",
+        "city" => "Kathmandu",
+        "country" => "Nepal",
+        "to" => "9810101010"
+    ],
+    [
+        "number" => "9869352000",
+        "message" => "Hello, this is a test message",
+        "city" => "Kathmandu",
+        "country" => "Nepal",
+        "to" => "9869352000"
+    ]
+];
+$message = "\${message} from \${country} to \${number} in \${city} \${to}";
+$response = $bitmoro->sendDynamicSms($contacts, $message, null, null, null);
+print_r($response);

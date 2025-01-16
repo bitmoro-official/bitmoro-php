@@ -59,10 +59,6 @@ class Bitmoro extends HttpRequest
 
     public function sendDynamicSms(array $contacts, string $message, $scheduledDate = null, $callbackUrl = null, $defaultValues = [], $newSenderId = null)
     {
-        return json_encode([
-            'status' => 'error',
-            'message' => 'Method not implemented yet',
-        ]);
         $url = "http://192.168.1.6:4000/message/dynamic-api";
         $token = $this->getApiToken();
         $senderId = $newSenderId ?? $this->getSenderId();
@@ -82,6 +78,7 @@ class Bitmoro extends HttpRequest
             $data['defaultValues'] = $defaultValueObject;
         }
         $response = $this->sendRequest($url, $token, $data);
+
         return $response;
     }
 }
